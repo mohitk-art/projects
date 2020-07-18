@@ -1,0 +1,9 @@
+CREATE VIEW WITCH HAVE USERNAME,SUBJECT,TEST,TEST DATE,SCORE,TOTAL SCORE
+
+1.create a view s_and_t 
+create view s_and_t as select t.*, s.sub_name from mst_test t,mst_subject s where t.sub_id=s.sub_id;
+
+2. create view userscre
+create view userscore as select r.login"username", sat.sub_name"subject", sat.test_name"test", r.score"score", sat.total_que"total_que" ,r.test_date"test_date" from mst_result r, s_and_t sat where sat.test_id=r.test_id;
+
+3.

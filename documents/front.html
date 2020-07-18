@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>front page</title>
+<script type="text/javascript" src="subject.js"></script>
+<link rel="stylesheet" href="stylesheet/stylenew.css">
+<script type="text/javascript">
+	function display(){
+	document.getElementById("home").style.display="";
+	document.getElementById("gallery").style.display="";
+	document.getElementById("aboutus").style.display="";
+	document.getElementById("contectus").style.display="";
+	document.getElementById("subject").style.display="";
+	}
+
+	function home(){
+	document.getElementById("middle").innerHTML="Home Page";
+	}
+
+	function gallery(){
+		document.getElementById("middle").innerHTML="Gallery";
+	}
+
+	function aboutus(){
+		document.getElementById("middle").innerHTML="About us";
+	}
+
+	function contectus(){
+		document.getElementById("middle").innerHTML="Contect Us";
+	}
+
+	function subject(){
+			subjectp();
+	}
+</script>
+</head>
+<body>
+	<header>Computer Engineering</header>
+<nav>
+	<table width="100%">
+		<tr id="btn">
+			<th onClick="return home();" id="home">Home</th>
+			<th onClick="return gallery();" id="gallery">Gallery</th>
+			<th onClick="return aboutus();" id="aboutus">About Us</th>
+			<th onClick="return contectus();" id="contectus">Contect Us</th>
+			<th onClick="return subject();" id="subject">Subject</th>
+		</tr>
+	</table>
+</nav>
+
+	<section>
+	<table width="100%" cellspacing="10" cellpadding="10">
+		<tr>
+			<th id='leftside'>
+				<marquee direction="down" scrollamount="20" behaviour="alternate">
+					<img src="photos/1.jpg">
+					<img src="photos/2.jpg">
+					<img src="photos/3.jpg">
+					<img src="photos/4.jpg">
+					<img src="photos/5.jpg">
+					<img src="photos/6.jpg">
+					<img src="photos/7.jpg">
+					<img src="photos/8.jpg">
+				</marquee>
+			</th>
+			<th id='middle' valign="top">Welcome to Computer Hub</th>
+			<th id='rightside'>
+				<marquee direction="up" scrollamount="20" behaviour="alternate">
+					<img src="photos/1.jpg">
+					<img src="photos/2.jpg">
+					<img src="photos/3.jpg">
+					<img src="photos/4.jpg">
+					<img src="photos/5.jpg">
+					<img src="photos/6.jpg">
+					<img src="photos/7.jpg">
+					<img src="photos/8.jpg">
+				</marquee>
+			</th>
+		</tr>
+	</table> 
+</section>
+	<footer>
+		<table width="100%">
+			<tr>
+				<th>
+					<span id="dropdown">
+						<span id="dropdown-content">
+						<img src="sjppdamla.jpg">
+					</span>
+					<img src="sjppdamla.jpg">
+				</span>
+				</th><td>Seth Jai Parkash Polytechnic, Damla(Yamunanagar)</td>
+				<th width="50%"></th>
+				<th><img src="twitter icon2.jpg"></th><td>Twitter</td>
+			</tr>
+			<tr>
+				<th width="5%"><img src="phone icon1.png"></th><td width="20%">+91 9068456423</td>
+				<th><marquee>designed by Mohit</marquee></th>
+				<th width="5%"><img src="facebook icon.png"></th><td width="20%">facebook</td>
+			</tr>
+			<tr>
+				<th><img src="email icon.jpg"></th><td>mksjppdamla27@gmail.com</td>
+				<th></th>
+				<th><img src="you tube1.jpg"></th><td>You Tube</td>
+			</tr>
+		</table>
+	</footer>
+</body>
+</html>

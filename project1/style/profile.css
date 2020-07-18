@@ -1,0 +1,65 @@
+/* CSS Document */
+.data{ /* content centre */
+	text-align: center;
+	height:100px;
+	border-bottom:1px solid red;
+	margin:5px;
+	padding:5px;
+	}
+	
+	/*page heading */
+#ph{
+font-size:36px;
+color:red;
+text-align:center;
+text-shadow:#999999 4px 4px 2px;
+color:
+}
+	
+	.datah{
+	/*border:1px solid green; */
+	height:150px;
+	box-shadow:1px 1px 1px 1px green;
+	margin:5px;
+	padding:5px;
+	width:300px;
+	}
+	
+	#mbtnp{display:none;} /*change mobile */
+	#ebtnp{display: none;} /*change email */
+	#abtnp{display: none;} /*change address */
+	#passbtnp{display: none;} /*change password */
+	
+
+
+section{
+margin:5px;
+padding:5px;
+background-size: 500px 100%;
+background-repeat:no-repeat;
+background-position:center;
+text-shadow:white 1px 1px;
+box-shadow:1px 1px 1px 1px skyblue;
+}
+
+footer{
+margin:5px;
+padding:5px;
+background:url(../images/footer3.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:100% 100%;
+}
+
+header{
+margin:5px;
+padding:5px;
+background:url(../images/header3.jpg);
+background-size:100% 100%;
+}
+
+article{
+margin:5px;
+padding:5px;
+box-shadow:1px 1px 1px 1px skyblue;
+}

@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>program</title>
+</head>
+<body>
+<style>
+h1{color:blue}
+textarea{background-color:d6edff}
+h3{color:green;font-variant:small-caps}
+h2{color:red;font-variant:small-caps}
+</style>
+<h1>Programs</h1>
+<h2>Array</h2>
+<h3>Addition of matrix using function</h3>
+<textarea rows="58" cols="70" readonly>#include<stdio.h>
+#include<conio.h>
+void read_arr(int a[10][10],int row,int col)
+{
+    int i,j;
+    for(i=1;i<=row;i++)
+    {
+        for(j=1;j<=col;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+}
+
+void add_arr(int ma[10][10],int mb[10][10],int mc[10][10],int row,int col)
+{
+    int i,j;
+    for(i=1;i<=row;i++)
+    {
+        for(j=1;j<=col;j++)
+        {
+            mc[i][j]=ma[i][j]+mb[i][j];
+        }
+    }
+}
+
+void print_arr(int mc[10][10],int row,int col)
+{
+    int i,j;
+    for(i=1;i<=row;i++)
+    {
+        for(j=1;j<=col;j++)
+        {
+            printf("%d ",mc[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int m1[10][10],m2[10][10],m3[10][10],i,j,row,col;
+    
+    printf("Enter no. of row and column\n");
+    scanf("%d%d",&row,&col);
+    
+    printf("Enter 1st matrix\n");
+ read_arr(m1,row,col);
+    
+    printf("Enter 2nd matrix\n");
+    read_arr(m2,row,col);
+    
+    add_arr(m1,m2,m3,row,col);
+    printf("\nAddition of two matrix is\n");
+    print_arr(m3,row,col);
+    }
+    </textarea><br>
+    <h3>Multiplication of matrix</h3>
+    <textarea rows="38" cols="70" readonly>
+    int main()
+    {
+    int a[2][2],b[2][2],c[2][2],i,j,k;
+    printf ("Enter values of matrix a");
+    for(i=1;i<=2;i++)
+    {
+    for(k=1;k<=2;k++)
+    {
+    scanf ("%d",&a[i][k]);
+    }
+    }
+    printf ("Enter values of matrix b");
+    for(k=1;k<=2;k++)
+    {
+    for(j=1;j<=2;j++)
+    {
+    scanf("%d",&b[k][j]);
+    }}
+    //logic
+    for(i=1;i<=2;i++)
+    {
+    for(j=1;j<=2;j++)
+    {
+    c[i][j]=0;
+    for(k=1;k<=2;k++)
+    {
+    c[i][j]=c[i][j]+a[i][k]*b[k][j];
+    }}
+    
+    //show data
+    for(i=1;i<=2:i++)
+    {
+    for(j=1;j<=2;j++)
+    {
+    printf("result is -\n%d",&c[i][j])
+    }}
+    </textarea><br>
+    <h3>Selction Sort</h3>
+    <textarea rows="33" cols="70" readonly>
+    //selection sort
+    #include<stdio.h>
+    #include<conio.h>
+    int main()
+    {
+    int a[40],b,n,c,tmp;
+    printf("Enter size of array ");
+    scanf("%d",&n);
+    printf("Enter the values->\n");
+    for(b=1;b<=n;b++)
+    {
+    printf("%d. ",b);
+    scanf("%d",&a[b]);
+    }
+    
+    for(b=1;b<=n;b++)
+    {
+    for(c=b+1;c<=n;c++)
+    {
+    if(a[b]>a[c])
+    {
+    tmp=a[b];
+    a[b]=a[c];
+    a[c]=tmp;
+    }}}
+    
+    printf("Values in sorted list\n");
+    for(b=1;b<=n;b++)
+    {
+    printf("\n%d. %d",b,a[b]);
+    }
+    }
+    </textarea><br>
+    <h3>Bubble Sort</h3>
+    <textarea rows="33" cols="70" readonly>
+    //bubble sort
+    #include<stdio.h>
+    #include<conio.h>
+    int main()
+    {
+    int a[40],b,n,c,tmp;
+    printf("Enter size of array ");
+    scanf("%d",&n);
+    printf("Enter the values->\n");
+    for(b=1;b<=n;b++)
+    {
+    printf("%d. ",b);
+    scanf("%d",&a[b]);
+    }
+    
+    for(b=n;b>=1;b--)
+    {
+    for(c=1;c<=b;c++)
+    {
+    if(a[c]>a[b])
+    {
+    tmp=a[b];
+    a[b]=a[c];
+    a[c]=tmp;
+    }}}
+    
+    printf("Values in sorted list");
+    for(b=1;b<=n;b++)
+    {
+    printf("\n%d. %d",b,a[b]);
+    }
+    }
+    </textarea>

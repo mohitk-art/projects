@@ -1,0 +1,116 @@
+C LANGUAGE
+1. in math header file:
+sqrt() function: 
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int num;
+clrscr();
+cin>>num;
+cout<<"square root::"<<squrt(num);
+getch();
+}
+
+2. Area of circle
+#include<iostream.h>
+#include<conio.h>
+#define PI 3.142
+int main()
+{
+float r,a;
+clrscr();
+cout<<"Enter radius: ";
+cin>>r;
+a=PI*r*r;
+cout<<"Area of circle is "<<a;
+getch();
+}
+
+3. File
+Write in file
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+FILE *fp;
+int rno=127;
+char name[25]="Mohit";
+float marks=84.64;
+clrscr();
+fp=fopen("data-1.txt","w");
+fprintf(fp,"%d %s %f\n",rno,name,marks);
+printf("\n Details saved in file. ");
+fclose(fp);
+getch();
+return 0;
+}
+
+Read in file
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+FILE *fp;
+int rno;
+char name[25];
+float marks;
+clrscr();
+fp=fopen("data-1.txt","r");
+fscanf(fp,"%d %s %f",&rno, &name, &marks);
+printf("\n Details from file: ");
+printf("\n Roll no : %d ",rno);
+printf("\n Name : %s ",name);
+printf("\n Marks : %.2f",marks);
+fclose(fp);
+getch();
+return 0;
+}
+
+Structure variable from file write
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+int rno;
+char name[25];
+float marks;
+};
+int main()
+{
+FILE *fp;
+struct student s;
+clrscr();
+fp=fopen("student.txt","w");
+cout<<"Enter Rollno : ";
+cin>>s.rno;
+cout<<"Enter Name : ";
+fflush(stdin);
+gets(s.name);
+cout<<"Enter marks : ";
+cin>>s.marks;
+fprintf(fp,"%d %s %f\n",s.rno,s.name,s.marks);
+fclose(fp);
+getch();
+return 0;
+}
+
+Structure variable from file read
+#include<stdio.h>
+#include<conio.h>
+#include<process.h>
+int main()
+{
+FILE *fp;
+srtruct student s;
+fp=fopen("student.txt","rb");
+fread(&s,sizeof(s),1,fp);
+printf("\nRoll no. : %d",s.rno);
+printf("\nEnter name : %s ",s.name);
+printf("\nEnter Marks : %.2f",s.marks);
+fclose(fp);
+getch();
+return 0;
+}

@@ -1,0 +1,18 @@
+/* signup */
+
+th{
+text-align:left;
+}
+h1{text-align:center;color:red;
+text-shadow:#999999 -1px -1px;font-size:28px;}
+
+input{height:25px;font-weight: bold;}
+input:hover{background:#0099FF;color:white;}
+a{
+font-weight:bold;
+font-size:18px;
+}
+a:hover{
+background:#CCCCCC;}
+#sub{height:30px;width:70px;}
+#sub:hover{background:#009933;color:#FFFFFF;font-weight:bold;text-shadow:#FF0000 -1px -1px}

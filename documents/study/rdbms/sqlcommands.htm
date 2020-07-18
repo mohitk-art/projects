@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>wwb page</title>
+<script>
+function a()
+{
+var subject='RDBMS';
+var a=5;
+for(var i=a;i>=1;i--)
+{
+for(var j=i;j>=1;j--)
+{
+if(i==1){
+document.write("<font id='h1' color='red'>",subject," </font>");
+}
+else if(i==2)
+{
+document.write("<font id='h1' color='blue'>",subject," </font>");
+}
+else if(i==3)
+{
+document.write("<font id='h1' color='green'>",subject," </font>");
+}
+else if(i==4)
+{
+document.write("<font id='h1' color='orange'>",subject," </font>");
+}
+else
+{
+document.write("<font id='h1'>",subject," </font>");
+}
+}
+document.write("<br>");
+}
+}
+
+
+
+function b()
+{
+subject='RDBMS';
+document.write("<font  size=7 aign='center' color='red'>",subject,"</font>");
+}
+
+function d()
+{
+subject='RDBMS';
+var a=5;
+for(var i=a;i>=1;i--)
+{
+for(var j=i;j>=1;j--)
+{
+if(i==1){
+document.write("<font id='h1' color='red'>",subject," </font>");
+}
+else if(i==2)
+{
+document.write("<font id='h1' color='blue'>",subject," </font>");
+}
+else if(i==3)
+{
+document.write("<font id='h1' color='green'>",subject," </font>");
+}
+else if(i==4)
+{
+document.write("<font id='h1' color='orange'>",subject," </font>");
+}
+else
+{
+document.write("<font id='h1'>",subject," </font>");
+}
+}
+document.write("<br>");
+}
+}
+
+</script>
+<style>
+d{color:#333333;}
+i{color:#0099FF; 
+line-height:50px;
+font-weight:bold;}
+body{font-size:26px}
+h3{color:#00FF00}
+h2{color:#999999}
+h1{text-align:;
+border-bottom:dashed green;
+border-left:dashed green;
+border-right:dashed green;
+border-top:dashed green;
+}
+
+#or{margin-left:50px;font-weight:bold;color:orange}
+#h1{font-size:17px;}
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>
+<table width="100%">
+<tr>
+<th align="left">
+<script>a();</script>
+</th>
+
+<!--<th align="right">     -->
+<th align="center">
+<script>b();</script>
+</th>
+
+<!--center
+
+<th align="left">
+<script>c();</script>
+</th>
+-->
+
+<th align="right">
+<script>d();</script>
+</th>
+</tr>
+</table>
+</h1>
+</div>
+<div id="body">
+<h2>sql Commands</h2>
+
+<h3>Create</h3>
+<i>create table <d>table_name</d>(<d>column1 datatype, column2 datatype, column3 datatype</d>);</i>
+
+<h3>Insert</h3>
+<i>Insert into <d>table_name</d> values(<d>value1, value2, value3</d>);</i> <font id="or">or</font>
+<br><i>Insert into <d>table_name</d>(<d>column1,column2</d>) values(<d>value1, value2</d>);</i>
+<h3>Select</h3>
+
+<i>Select <d>*</d>from <d>table_name;</d></i> <font id="or">or</font>
+<br><i>Select <d> column1,column2,column3 </d>from <d>table_name;</d></i>
+
+<h3>update</h3>
+<i>updata <d>table_name</d> set <d>column_name=value</d> where <d>condition</d>;</i>
+
+<h3>Alter</h3>
+<i>alter table <d>table_name</d> modify <d>column_name datatype</d>;</i><br>
+<i>alter table <d>table_name</d> drop column <d>column_name</d>;</i><br>
+<i>alter table <d>table_name</d> add <d>column_name datatype</d>;</i>
+
+<h3>Delete</h3>
+<i>delete from <d>table_name</d> where <d>condition</d>;</i>
+
+<h3>Rename</h3>
+<i>rename <d>table_name</d> to <d>new_table_name</d>;</i>
+
+<h3>Drop</h3>
+<i>drop table <d>table_name</d>;</i>
+
+<h3>Truncate</h3>
+<i>truncate table <d>table_name</d>;</i>
+
+<h3>Joins</h3>
+<i>Select <d>table1.column2, table2.column2, table1.column3, table2.column3,...</d> from <d>table1</d> innner join <d>table2</d> on <d>table1.column1=table2.column1</d></i>; 
+<br><i>Select <d>table1.column2, table2.column2, table1.column3, table2.column3,...</d> from <d>table1</d> left join <d>table2</d> on <d>table1.column1=table2.column1</d></i>; 
+<br><i>Select <d>table1.column2, table2.column2, table1.column3, table2.column3,...</d> from <d>table1</d> right join <d>table2</d> on <d>table1.column1=table2.column1</d></i>; 
+<br><i>Select <d>table1.column2, table2.column2, table1.column3, table2.column3,...</d> from <d>table1</d> full join <d>table2</d> on <d>table1.column1=table2.column1</d></i>; 
+
+<h3 style="color:orange">Indexes</h3>
+<h3>Create index</h3>
+<i>create index <d>index_name</d> on <d>table_name</d>(<d>class,marks</d>);</i>
+<br><i>Create unique index <d>index_name</d> on <d>table_name</d>(<d>rollno</d>);</i> <font id="or">or</font>
+<br><i>Create unique index <d>index_name</d> on <d>table_name</d>(<d>rollno,admission_no</d>);</i>
+<h3>Drop Index</h3>
+<i>drop index <d>index_name</d>;</i>
+<h3 style="color:orange">Functions</h3>
+<h3>min()</h3>
+<i>select min(<d>marks</d>) from <d>student</d>;</i>
+</div>
+<div id="footer"></div>
+
+</body>
+</html>

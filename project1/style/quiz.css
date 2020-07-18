@@ -1,0 +1,50 @@
+/*quiz css */
+
+.style2{
+	color: green;
+	text-shadow: red -1px -1px;
+	font-size: 30px;
+}
+
+.style8{
+	color: blue;
+	text-shadow: orange -1px -1px;
+	font-size: 25px;
+}
+
+/*wrong aznswere */
+.fans{
+color:red;
+}
+
+/*true answere */
+.tans{
+color:blue;
+}
+section{
+margin:5px;
+padding:5px;
+height: 320px;
+text-align: center;
+background-size: 500px 100%;
+background-repeat:no-repeat;
+background-position:center;
+text-shadow:white 1px 1px;
+box-shadow:1px 1px 1px 1px skyblue;
+}
+
+footer{
+margin:5px;
+padding:5px;
+background:url(../images/slides.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:100% 100%;
+}
+
+header{
+margin:5px;
+padding:5px;
+background:url(../images/footer6.jpg);
+background-size:100% 100%;
+}

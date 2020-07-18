@@ -1,0 +1,60 @@
+/* footer */
+
+
+		.fit tr img{
+		height: 50px;
+		width: 50px;
+		border-radius: 20px;
+	}
+
+	.fit tr td{
+	height: 50px;
+	vertical-align: top;
+	background-size: 100% 100%;
+	border-radius: 20PX; 
+	}
+
+	#fbg:hover{
+		background: url("style/fbbg1.png");
+		height: 200px;
+		background-size: 100% 100%;
+	}
+
+	#tbg:hover{
+		background: url("style/twbg1.png");
+		height: 200px;
+		background-size: 100% 100%;
+	}
+
+		#ybg:hover{
+		background: url("style/youbg1.png");
+		height: 200px;
+		background-size: 100% 100%;
+	}
+
+	footer{
+		height: 200px;
+	}
+
+
+#icon{ /*icon area */
+height:180px;
+}
+
+#marquee{color:white;text-shadow:blue -1px -1px;}
+#marquee:hover{color:#0000FF;text-shadow:#FFFFFF}
+
+
+
+/* footer */
+#fbtns{
+width:30%;
+}
+
+#fcnct{
+width:30%;
+}
+
+#ftable{
+height:80px;
+}

@@ -1,0 +1,4 @@
+1. use id (#) for all button like home, subject .
+
+2. each button id's will be in the span tag.
+

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Untitled</title>
+<style>
+#head
+{
+height:125px;
+width:100%;
+background:url("photos/bg.png");
+border-radius:25px;
+text-align:center;
+font-size:50px;
+padding-top:25px;
+font-weight:bold;
+color:white;
+}
+img
+{
+padding-left:45%;
+}
+#img
+{
+border:5px solid green;
+height:250px;
+width:250px;
+}
+#sql
+{
+color:green;
+}
+#link
+{
+font-size:30px;
+font-weight:bold;
+}
+
+</style>
+<script language="JavaScript" type="text/javascript" src="js/jquery/jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function()
+{
+
+$("#sql").mouseenter(function()
+{
+$("#img").css("background","url('photos/dbms1.png')");
+$("#img").css("background-size","100% 100%");
+});
+
+$("#img").mouseenter(function()
+{
+$(this).css("background","white");
+});
+
+});
+</script>
+</head>
+<body>
+<div id="head">Relational Database Management Systam</div>
+<h7><img src="photos/rect.png" alt="rect" align="centre"/></h7>
+<br>
+<span id="link">
+<a href="sqlcommands.htm" id="sql">SQL Commands</a>
+<a href=""></a>
+</span>
+<div id="img"></div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/*front page */
+body{
+background:url(../images/body1.jpg);
+background-position:center;
+background-size:100% 100%;
+background-attachment:fixed;
+}
+
+/*page heading */
+#ph{
+font-size:36px;
+color:red;
+text-align:center;
+text-shadow:white 4px 4px 2px;
+}
+
+#signup{ /*signup */
+font-size:18px;
+color:white;
+text-shadow:blue -1px -1px;
+box-shadow:2px 1px 2px 2px #CCCCCC;
+}
+#signup:hover{color:red;text-shadow:skyblue -1px -1px;}
+
+
+#b{ /*button */
+height:25px;
+width:80px;
+color:white;
+text-shadow:blue -1px -1px;
+background:-webkit-linear-gradient(60deg,#FFFFFF,#CCCCCC,#999999,#666666,#333333,#000000);
+border-radius:20px;
+cursor:pointer;
+}
+input{height:25px;font-weight:bold;background:-webkit-linear-gradient(60deg,#FFFFFF,#CCCCCC,#999999,#666666,#333333,#000000);color:red;text-shadow:white -1px -1px;}
+input:hover{color:red;text-shadow:white -1px -1px;background:-webkit-linear-gradient(60deg,white,#0033FF,#0033CC,#003399,#003366);}
+
+
+hr{background-color: red;height:1px;} 
+#adds{text-shadow: -1px -1px white;color:red;width:100%;height:0px;}
+#btns{height:10px;}
+
+
+#leftspan, #rightspan{
+width:20%;
+text-align:center;
+margin:5px;
+padding:5px;
+color:white;
+text-shadow:#FF0000 1px 1px;
+}
+
+#centerspan{
+margin:5px;
+text-align:center;
+padding:5px;
+}
+
+section{
+margin:5px;
+padding:5px;
+height:320px;
+background-size: 500px 100%;
+background-repeat:no-repeat;
+background-position:center;
+text-shadow:white 1px 1px;
+box-shadow:1px 1px 1px 1px skyblue;
+}
+
+footer{
+margin:5px;
+padding:5px;
+background:url(../images/slides.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:100% 100%;
+}
+
+header{
+margin:5px;
+padding:5px;
+background:url(../images/footer6.jpg);
+background-size:100% 100%;
+}

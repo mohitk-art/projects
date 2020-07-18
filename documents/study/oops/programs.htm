@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>programs</title>
+</head>
+<style>
+h1{color:#00ff00}
+h2{color:#ff00ff
+</style>
+<body>
+<h1>Programs</h1><hr>
+<h2>Data Abstraction</h2>
+<textarea rows="36" cols="40">
+/* Data Abstraction */
+#include<iostream.h>
+#include<conio.h>
+class adder
+{
+public:
+//constructor
+adder(int i=0)
+{
+total=i;
+}
+
+void addnum(int number)
+{
+total=total+number;
+}
+
+int gettotal()
+{
+return total;
+};// in the function of int ';' is using
+
+private:
+int total;
+};
+int main()
+{
+adder a;
+a.addnum(10);
+a.addnum(20);
+a.addnum(30);
+cout<<"Total = "<<a.gettotal()<<endl;
+getch();
+clrscr();
+}
+</textarea>
+<h2>Inheritance</h2>
+<textarea rows="67" cols="40">
+//inheritence
+#include<iostream.h>
+#include<conio.h>
+//base class
+class string
+{
+string()
+{
+char str[15];
+public:
+string()
+{
+str[0]='\0';
+}
+
+getstr()
+{
+cin>>str;
+}
+
+class person
+{
+char name[15],fname[15];
+public:
+void readdata()
+{
+cout<<"Enter name ";
+cin>>name;
+cout<<"Enter father's name ";
+cin>>fname;
+}
+void showdata()
+{
+cout<<"Name = "<<name<<endl;
+cout<<"Father's name = "<<fname<<endl;
+}
+};
+//derived class
+/*
+lass student;public person
+{
+int rollno,marks;
+public:
+void readdata()
+{
+person::readdata()
+cout<<"Enter rollno ";
+cin>>rollno;
+cout<<"Enter marks ";
+cin>>marks;
+}
+void showdata()
+{
+person::showdata();
+cout<<"Rollno = "<<rollno<<endl;
+cout<<"Marks = "<<marks<<endl;
+}
+};*/
+int main()
+{
+clrscr();
+person a;
+a.readdata();
+a.showdata();
+getch();
+}
+</textarea>

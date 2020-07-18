@@ -1,0 +1,5 @@
+function a()
+{
+document.getElementById("bg").innerHTML="<div style='width:400px;margin-left:13px'><b><font style='color:#00FF00;width:400px'>Call us</font></b><hr/><img src='phone icon.png' style='border-radius:16px' id='img'/> <i> +919416903241</i><br/><font color='#FFFFFF'>Address :</font> <i> DK Unicare A software solution PVT. LTD., 4th floor, Phase 8, Mohali, Chandigarh</i><br/><img src='email icon.jpg' id='img'/> <i> mksjppdamla27@gmail.com</i></div><div style='width:350px;margin-left:500px;margin-top:-80px'><marquee>copyright &copy; 2017.Designed by Mohit,Mehak,Ashna,Akash</marquee></div><div style='margin-left:915px;width:400px;margin-top:-80px'><b><font style='color:#0033FF'>Follow us</font></b><hr/><img src='photos/facebook.png' id='img'/>facebook <img src='whatsapp icon.jpg' style='margin-left:50px' id='img'/> +919068456423<br/><img src='twitter icon2.jpg' id='img' style='border-radius:4px'/>twitter <br/><img src='you tube1.jpg' id='img' style='border-radius:5px'/> youtube<br/></div>";
+/*style="height:150px;width:100%;background-color:white;margin-top:150px"*/
+}

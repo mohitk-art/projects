@@ -1,0 +1,40 @@
+/* Status page */
+	.r{color: blue;text-shadow: red -1px -1px; border: 1px solid red} /* first raw of staff Detail */
+	#sdt{border: 1px blue}
+.th{
+background: gray;
+color: white;
+height:30px;
+text-shadow: red -1px -1px;
+text-align: center;
+}
+
+#d{
+	border: yellow solid 1px;
+}
+
+section{
+margin:5px;
+padding:5px;
+background-size: 500px 100%;
+background-repeat:no-repeat;
+background-position:center;
+text-shadow:white 1px 1px;
+box-shadow:1px 1px 1px 1px skyblue;
+}
+
+footer{
+margin:5px;
+padding:5px;
+background:url(../images/slides.jpg);
+background-repeat:no-repeat;
+background-position:center;
+background-size:100% 100%;
+}
+
+header{
+margin:5px;
+padding:5px;
+background:url(../images/footer6.jpg);
+background-size:100% 100%;
+}

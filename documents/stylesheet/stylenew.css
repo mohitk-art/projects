@@ -1,0 +1,164 @@
+/* CSS Document */
+	header{
+		color:green;
+		box-shadow: 2px 1px 1px red;
+		height: 150px;
+		width:100%;
+		font-family: "Times New Roman";
+		font-size:50px;
+		text-align: center;
+		font-variant: small-caps;
+		background: skyblue;
+		margin: 5px 5px;
+		padding: 5px 5px;
+	}
+
+section{ 
+	margin: 5px 5px;
+	padding: 5px 5px;
+	text-align: center;
+	box-shadow: skyblue 2px 1px 1px;
+	min-height: 270px;
+	width: 100%;
+
+}
+
+footer{
+	margin: 5px 5px;
+	padding: 5px 5px;
+	text-align: center;
+	width:100%;
+	box-shadow: orange 2px 1px 1px;
+	background: -webkit-linear-gradient(80deg, purple, orange, skyblue, green);
+}
+
+#leftside{
+	box-shadow: blue 1px 1px 2px;
+	width: 20%;
+	margin: 5px 5px;
+	padding: 5px 5px;
+/*background: orange; */
+}
+
+#rightside{
+	box-shadow: blue 1px 2px 1px;
+	width:20%;
+	margin: 5px 5px;
+	padding: 5px 5px;
+/*	background:orange; */
+}
+
+#middle{
+	box-shadow: blue 1px 2px 1px;
+	width:60%;
+	padding: 5px 5px;
+}
+
+footer img{
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+}
+
+nav{
+	width: 100%;
+	text-align: center;
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+#btn th{
+	border:1px solid blue;
+	color:red;
+	text-shadow: -1px -1px white;
+	background: skyblue;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+#btn th:hover{
+	border:1px solid red;
+	color:white;
+	background: blue;
+	text-shadow: -1px -1px red;
+}
+
+#leftside marquee img, #rightside marquee img{
+	height: 250px;
+	width: 250px;
+	margin: 5px 5px;
+	border-radius: 20px;
+	border: 1px solid red;
+}
+
+#leftside marquee img:hover, #rightside marquee img:hover{
+	height: 250px;
+	width: 250px;
+	margin: 5px 5px;
+	border-radius: 20px;
+	border: 1px solid blue;
+	opacity : 0.6;
+}
+
+#leftside marquee, #rightside marquee{
+	height: 300px;
+	width: 250px;
+}
+
+#dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+#dropdown-content{
+	display: none;
+	position: absolute;
+}
+
+#dropdown-content img{
+	height: 150px;
+	width: 200px;
+	border-radius: 0px;
+}
+
+#dropdown:hover #dropdown-content{
+	display: block;
+}
+
+/*subject */
+
+#subject table{
+width:100%;
+}
+
+#subject th{
+color:red;
+text-shadow:#CCCCCC -1px -1pxl;
+font-size:24px;
+width:100%;
+border:dashed 1px #6699FF;
+}
+
+#subject ul{
+text-align:left;
+}
+
+#subject ul a{
+text-decoration:none;
+}
+#subject ul li{
+color:blue;
+text-shadow:#CCCCCC;
+font-size:20px;
+cursor:pointer;
+}
+
+#subject ul li:hover{
+color:#00FF00;
+text-shadow:#FF0000;
+}
+
+#clanguage:hover{
+background:red;
+}

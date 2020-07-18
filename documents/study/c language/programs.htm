@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Programs</title>
+</head>
+<body bgproperties="fixed" background="photos/addition program.jg">
+<i>Programs</i>
+<hr/>
+
+<ol>
+<li><h4>Make a program to addition, substraction, division, multiplication of two variables.</h4></li>
+<style>
+body{color:orange}
+h1
+{
+color:pink;
+background-color:green;height:100px}
+h4
+{color:green;}
+a
+{
+color:red;
+background:yellow
+}
+textarea{background-color:87ff8a;border-style:hidden}
+textarea:hover{border-color:#00FF00;border-style:dashed;border-width:medium;color:#FF0000;}
+</style>
+<textarea readonly rows="18" cols="35">
+#include <stdio.h>
+int main()
+{
+int a=9,b=4,c;
+c=a+b;
+printf("a+b=%d\n",c);
+c=a*b;
+printf("a*b=%d\n",c);
+c=a-b;
+printf("a-b=%d\n",c);
+c=a/b;
+printf("a/b=%d\n",c);
+c=%b;
+printf("Remainder when a divided by b=%d\n",c);
+return 0;
+}
+</textarea>
+<h4>Output</h4>
+<textarea readonly rows="6" cols="35">
+a+b=13
+a*b=36
+a-b=5
+a/b=2
+Remainder when a divided by b=1
+</textarea>
+<li><h4>Sum of two variables.</h4></li>
+<textarea readonly rows="13" cols="35">
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int a,b,sum;
+printf("enter the values");
+scanf("%d%d",&a&b);
+sum=a+b;
+printf("sum of two numbers=%d");
+getch();
+clrscr();
+}
+</textarea>
+<h4>Output<h4>
+<textarea readonly rows="5" cols="35">
+enter the values
+22
+33
+sum of two numbers=55
+</textarea>
+<li><h4>Write a program to find the sum and average of three numbers.</h4></li>
+<textarea readonly rows="16" cols="35">
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a,b,c,sum,avg;
+    printf("Enter Three values");
+    scanf("%d%d%d",&a,&b,&c);
+    sum=a+b+c;
+    avg=sum/3;
+    printf("Sum of Three Numbers is %d\nAverage of three numbers is %d",sum,avg);
+    getch();
+    clrscr();
+}
+</textarea>
+<h4>Output</h4>
+<textarea readonly rows="6" cols="35">
+Enter three values 1
+2
+3
+Sum of three numbers is 6
+Average of three numbers is 2
+</textarea>
+<li><h4></h4></li>
+</ol>
+</body>
+</html>

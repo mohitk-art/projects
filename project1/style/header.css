@@ -1,0 +1,51 @@
+/*header page */
+.body{
+width:95%;
+border:0px;
+}
+
+
+
+#u{ /*user logo*/
+color:red;
+font-weight:bold;
+text-shadow:white 1px 1px;
+font-size:20px;
+}
+#o{ /* user name */
+color:#FFFFFF;
+text-shadow:#FF0000 1px 1px;
+font-size:20px;
+}
+
+nav{height:5px;
+margin:5px;
+padding:5px;
+text-align:right;
+}
+
+/*#h{
+background:-webkit-linear-gradient(60deg,white,white,#0033FF,#0033CC,#003399,#003366);
+}
+*/
+
+#h1{ /*hader 1*/
+height:100px;
+/*border:#FF0000 solid 1px; */
+}
+
+#fence{ /*flash file */
+height:70px;
+width:400px;
+text-align:left;
+}
+
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."] {
+    display: none;
+}
+
+
+#btn,button{color:white;font-weight:bold;text-shadow:blue -1px -1px;background:-webkit-linear-gradient(60deg,#FFFFFF,#CCCCCC,#999999,#666666,#333333,#000000);heigth:40px;width:100px;border-radius:20px;margin-left:30px;cursor: pointer;}
+
+/* #b is login button */
+#btn:hover,button:hover, #b:hover{color:white;text-shadow:red -1px -1px;background:-webkit-linear-gradient(60deg,white,#0033FF,#0033CC,#003399,#003366);-webkit-transform:scale(1.2,1.2)}

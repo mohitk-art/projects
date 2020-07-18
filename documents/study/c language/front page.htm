@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>c language</title>
+<link rel="stylesheet" href="stylesheet/cstyle.css"/>
+<script type="text/javascript" src="js/jquery/jquery-1.8.3.min.js" language="javascript"></script>
+<script type="text/javascript" src="js/cjs.js" language="javascript"></script>
+
+</head>
+<body style="text-align:justify">
+<header>C Language</header>
+<section>
+<article>
+<i>Introduction</i><br>
+C is a general-purpose high level language that was originally developed by Dennis Ritchie for the Unix operating system. It was first implemented on the Digital Eqquipment Corporation PDP-11 computer in 1972.<br/>
+The Unix operating system and virtually all Unix applications are written in the C language. C has now become a widely used professional language for various reasons.<br/>
+Easy to learn<br/>
+Structured language<br/>
+It produces efficient programs.<br/>
+It can handle low-level activities.<br/>
+It can be compiled on a variety of computers.<br/><br/>
+</article>
+
+<article>
+<ul style="list-style:decimal;list-style-position:inside">
+
+<li class="link" id="algo">Algorithm</li><br/>
+<div class="page" id="algop">																						<!-- algorithm start -->
+
+<i>Algorithm</i>
+<hr>
+An algorithm is defined as step by step procedure or method for solving a problem by a computer in a finite number of steps. We can can first develop an algorithm & then convert it into a flowchart & then into a computer program.<br><br>
+<b>Example of an Algorithm:</b><br>
+Here we will write an algorithm to add two numbers.<br>
+<ul><li>Step1: Start</li>
+<li>Step2: Declare variables num1, num2 and sum.</li>
+<li>Step3: Read values num1 and num2.</li>
+<li>Stem4: Add num1 and num2 and assign the result to sum.</li>
+&nbsp&nbsp&nbsp&nbspsum <img src="photos/arrow left.jpg" height="10"> num1+num2
+<li>step5: Display sum</li>
+<li>Step6: Stop</li>
+</ul>
+
+</div>																														<!--algorithm end -->
+
+
+
+<li class="link" id="flow">Flowchart</li><br/>
+<div class="page" id="flowp">																							<!-- flowchart start -->
+
+<i>Flowchart</i>
+<hr>
+A flowchart is graphical representation of an algorithm. These flowcharts play a vital role in the programming of a problem and are quite helpful in understanding the logic of complicated and lengthy problems. Once the flowchart is drawn, it becomes easy to write the program in any high level language. Often we see how flowcharts are helpful in  explaining the program to others. Hence, it is correct to say that a flowchart is a must for the better documentation of a complex program.<br><br>
+<b>Flowcharts are usually drawn using some standard symbols; however,</b><br><br>
+<img src="photos/start end symbol.jpg" height="45">
+Start or end of a program<br><br>
+<img src="photos/process symbol.jpg" height="45">
+Computational steps or processing function of a program<br><br>
+<img src="photos/input output.jpg">
+Input or Output Operation <br><br>
+<img src="photos/decision symbol.jpg" height="45">
+Decision making and branching<br><br>
+<img src="photos/connector symbol.jpg" height="45">
+Connector or joining of two parts of program<br><br>
+
+</div>																														<!--flowchart end -->
+
+
+
+<li class="link" id="lang">Language</li><br/>
+<div class="page" id="langp">																								<!-- languages start -->
+
+<i>Languages</i>
+<hr/>
+<u><b>Types of Computer Languages </b></u><br/>
+while easily understood by computers, machine languages are almost impossible for humans to use because they consist entirely of numbers. Programmers, therefore, use either a high-level programming language or an assembly language. There are three types of languages. <br/>
+1. <b>Machine Language</b><br/>
+2. <b>Assembly Language</b><br/>
+3. <b>high Level Language</b><br/>
+<img src=""><br/>
+<ol>
+<li><u><b>Machine Languages</b></u></li>
+Sometimes referred to as machine code or object code, machine languages is a collection of binary digits or bits that the computer reads and interprets. It is written in hex. <br>
+<ul type="square" class="point">
+<li>Normally written as strings of binary 1s and 0s, the symbol 0 stands for the absence of an electric pulse and the 1 stands for the presence of an electric pulse. Since a computer is capable of recognizing electric signals, it understands machine language.</li>
+<li>The set of symbol instruction codes usually in binary form that is used to represent operations and data in a machine (as a computer) --called also machine code.</li></ul><br>
+<li><u><b>Assembly Language</b></u></li>
+This is another low-level but very important language in which operation codes and operands are given in the form of alphanumeric symbols instead of 0's and 1's.<br/>
+These alphanumeric symbols are known as mnemonic codes and can combine in a maximum of five letter combination e.g. ADD for addition, SUB for subtraction, START, LABEL etc. Because of this feature, assembly language is also known as 'Symbolic Programming Language.'<br>
+<ul class="point">
+<li>Assembly language is just one level higher than machine language.</li>
+<li>Assembly language consists of simple codes.</li>
+<li>Each statement in an assembly language corresponds directly to a machine code understood by the cpu.</li>
+<li>The software used to convert an assembly program into machines codes is called an assembler.</li>
+</ul>
+<li><u><b>High Level Language</b></u></li>
+It is machine independent programming language. It does not require programmers to know anything about the internal structure of computer on which high level language programs will be executed. It only deals with high level coding and enables the programmers to write instructions using English words and familiar mathematical symbols and expressions</ol>
+
+</div>																												<!--language end -->
+
+
+<li class="link" id="lt">Language Translators</li><br/>
+<div class="page" id="ltp">																							<!--language translators start -->
+<i>Language Translators</i>
+<hr/>
+Language translators are software programs, which converts high level or assembly language program into machine language program. They are three types.<br>
+1. <b>Compiler</b><br>
+2. <b>Interpreter</b><br>
+3. <b>Assembler</b><br>
+<ol>
+<li><u><b>Compiler</b></u></li>
+It is a translator program(software) that translates a high level language program into its equivalent mavhine language program. It compiles a set of high level language instruction of the program and converts them into machine language instructions. it converts the whole program instruction into machine codes at once. In addition to doing transtation job, compilers also automatically detect and indicate sytax errors.
+<center><img src="photos/compiler symbol.gif" alt="compiler symbol"></center>
+<li><u><b>Interpreter</b></u></li>
+Interpreter is a high level language translator. It takes one statement of a high level language program, translates it into machine language instruction and immediately executes the resulting machine language instructions. then it reads the next statement of the program again translates it and executes it. In this way it proceeds further till statements are translated and executed.
+<center><img src="photos/interpreter symbol.gif" alt="interpreter symbol"></center>
+<li><u><b>Assembler</b></u></li>
+An assembler is a computer program that converts programs written in assembly language into machine language.
+<center><img src="photos/assembler.jpg" alt="assembler symbol"></center>
+</ol>
+</div>																												<!--language translators end -->
+
+
+
+<li class="link" id="pd">Program Debugging</li><br/>
+<div class="page" id="pdp"></div>
+<li class="link" id="sp">Structure of Program</li><br/>
+<div class="page" id="spp"></div>
+<li class="link" id="prog">Programs</li><br/>
+<div class="page" id="progp">																								<!-- programs start-->
+
+<i>Programs</i>
+<hr/>
+
+<ol>
+<li><h4>Make a program to addition, substraction, division, multiplication of two variables.</h4></li>
+
+<textarea readonly rows="18" cols="35">
+#include <stdio.h>
+int main()
+{
+int a=9,b=4,c;
+c=a+b;
+printf("a+b=%d\n",c);
+c=a*b;
+printf("a*b=%d\n",c);
+c=a-b;
+printf("a-b=%d\n",c);
+c=a/b;
+printf("a/b=%d\n",c);
+c=%b;
+printf("Remainder when a divided by b=%d\n",c);
+return 0;
+}
+</textarea>
+<h4>Output</h4>
+<textarea readonly rows="6" cols="35">
+a+b=13
+a*b=36
+a-b=5
+a/b=2
+Remainder when a divided by b=1
+</textarea>
+<li><h4>Sum of two variables.</h4></li>
+<textarea readonly rows="13" cols="35">
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int a,b,sum;
+printf("enter the values");
+scanf("%d%d",&a&b);
+sum=a+b;
+printf("sum of two numbers=%d");
+getch();
+clrscr();
+}
+</textarea>
+<h4>Output<h4>
+<textarea readonly rows="5" cols="35">
+enter the values
+22
+33
+sum of two numbers=55
+</textarea>
+<li><h4>Write a program to find the sum and average of three numbers.</h4></li>
+<textarea readonly rows="16" cols="35">
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a,b,c,sum,avg;
+    printf("Enter Three values");
+    scanf("%d%d%d",&a,&b,&c);
+    sum=a+b+c;
+    avg=sum/3;
+    printf("Sum of Three Numbers is %d\nAverage of three numbers is %d",sum,avg);
+    getch();
+    clrscr();
+}
+</textarea>
+<h4>Output</h4>
+<textarea readonly rows="6" cols="35">
+Enter three values 1
+2
+3
+Sum of three numbers is 6
+Average of three numbers is 2
+</textarea>
+<li><h4></h4></li>
+</ol>
+
+</div>																														<!-- programs end-->
+</ul>
+</article>
+<script type="text/javascript" language="javascript">a();</script>
+</body>
+</html>

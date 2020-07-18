@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Inheritance</title>
+</head>
+<style>
+h1{color:4cbfda;font-variant:small-caps}
+h3{color: orange}
+h4{color:#CC9966}
+</style>
+
+<body>
+<h1>Inheritanc</h1>
+<hr color="green">
+<a href="coop.htm" >Back</a>
+<h2>Definition</h2>
+Inheritanc is the process by which.Object of one class acquire the properties of Objects of another class.It supports the concept of hierarchical classification <br><br>
+In oop the concept of Inheritance provides the idea of reusability. The means that we can add additional features to an existing class without modifying it. This is possible by deriving a new class from the existing one. The new class will have the combined features of both the classes
+<h5>There are two classes in inheritance</h5>
+<h4>Base class</h4>The class whose features (qualities) are inherited by another class is called base class. eg. person.
+<h4>Derived class</h4>The class which inherits the features of another class is called derived class eg. employee.
+
+<center><img src="photos/Inheritance.gif"></center>
+<h3>Single Inheritance</h3>
+The setuation in which a derived class has only one base class.<br>
+<center><img src="photos/single inheritance.jpg"></center>
+<h4>Program</h4>
+<textarea rows="62" cols="45" readonly>
+#include<iostream>
+using namespace std;
+class person
+{
+protected:
+    char name[20];
+    int age;
+public:
+person()
+    {
+    strcpy(name,"");
+    age=0;
+}
+    void read()
+{
+    cout<<"Enter name & age ";
+    cin>>name>>age;
+}
+    
+void show()
+{
+cout<<"name = "<<name;
+cout<<"\nage = "<<age;
+    }
+};
+
+ //derived class
+class employee:public person
+{
+private:
+int eno;
+    float salary;
+    public:
+employee()
+    {
+eno=0;
+    salary=0.0;
+}
+    
+void read()
+{
+        person::read();
+cout<<"\nEnter eno & salary ";
+cin>>eno>>salary;
+}
+    
+void show()
+{
+person::show();
+        cout<<"\neno = "<<eno;
+cout<<"\nsalary = "<<salary<<endl;
+}
+};
+
+int main()
+{
+    employee e1;
+e1.show();
+    e1.read();
+e1.show();
+}
+</textarea>
+<h3>Multilevel inheritance</h3>
+if we inherit a base class [a] into derived class [b] & so on then this type of inheritance is called multilevel inheritance.
+<center><img src="photos/multilevel inheritance.jpg"></center>
+<h4>Program</h4>
+<textarea rows="86" cols="45" readonly>
+#include<iostream>
+using namespace std;
+class person
+{
+protected:
+    char name[20];
+    int age;
+public:
+person()
+    {
+    strcpy(name,"");
+    age=0;
+}
+    void read()
+{
+    cout<<"Enter name & age ";
+    cin>>name>>age;
+}
+    
+void show()
+{
+cout<<"name = "<<name;
+cout<<"\nage = "<<age;
+    }
+};
+
+ //derived class & base class or intermediate  class
+class employee:public person
+{
+protected:
+int eno;
+    float salary;
+    public:
+employee()
+    {
+eno=0;
+    salary=0.0;
+}
+    
+void read()
+{
+        person::read();
+cout<<"\nEnter eno & salary ";
+cin>>eno>>salary;
+}
+    
+void show()
+{
+person::show();
+        cout<<"\neno = "<<eno;
+cout<<"\nsalary = "<<salary<<endl;
+}
+};
+
+//derived class
+class manager:public employee
+{
+private:
+int experience;
+    public:
+    manager():employee()
+    {
+    experience=0;
+}
+    void read()
+{
+employee::read();
+        cout<<"Enter experience ";
+        cin>>experience;
+}
+    
+    void show()
+{
+employee::show();
+cout<<"experience = "<<experience<<endl;
+}
+};
+int main()
+{
+manager m1,m2;
+    m1.show();
+    m2.read();
+m2.show();
+}
+</textarea>
